@@ -3,15 +3,19 @@ function addUser() {
 
     localStorage.setItem("user_name", user_name);
 
-     window.location="home_page";
+     window.location="Let-chat-web-app_room.html";
 }
 
-const firebaseConfig = {
-    apiKey: "AIzaSyCVfHED0srcNgp5MT2YKte0-ZLNqhTqSpM",
-    authDomain: "classtest-4902e.firebaseapp.com",
-    projectId: "classtest-4902e",
-    storageBucket: "classtest-4902e.appspot.com",
-    messagingSenderId: "126564935653",
-    appId: "1:126564935653:web:5d992ba90e233d4a20710c"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyCpZ7YIEDWmhDG05kZmd-iyPQ0PKw_HOg4",
+  authDomain: "classtest-7e8d8.firebaseapp.com",
+  databaseURL: "https://classtest-7e8d8-default-rtdb.firebaseio.com",
+  projectId: "classtest-7e8d8",
+  storageBucket: "classtest-7e8d8.appspot.com",
+  messagingSenderId: "605841517622",
+  appId: "1:605841517622:web:7a6c9e6df93047efc87c97",
+  measurementId: "G-V1VRT0H00X"
+};
 
+// Initialize Firebase
+firebaseConfig.initializeApp(firebaseConfig);
