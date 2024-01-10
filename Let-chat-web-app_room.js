@@ -32,7 +32,7 @@ function addRoom()
       });
 
       localStorage.setItem("room_name", room_name);
-      window.location="Let-chat-web-app_room.html";
+      window.location="index.html";
 }
 
 function redirectToRoomName(name)
@@ -40,6 +40,13 @@ function redirectToRoomName(name)
       console.log(name);
       localStorage.setIem("room_name", name);
        window.location="index.html"
+}
+
+function logout()
+{
+      localStorage.setItem("user_name");
+      localStorage.setItem("room_name");
+      window.location="index.html";
 }
 
 
